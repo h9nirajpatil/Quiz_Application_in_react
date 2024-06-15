@@ -1,0 +1,95 @@
+/* Quiz container styles */
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.quiz-container {
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-content: center;
+  margin: 2.3% 0;
+}
+.quiz-container2 {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.quiz-container h1 {
+  text-align: center;
+}
+
+.quiz-container .question {
+  margin-bottom: 20px;
+}
+
+.quiz-container .options {
+  margin-bottom: 10px;
+}
+
+.quiz-container .option {
+  margin-bottom: 5px;
+}
+
+.quiz-container #submit-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-container #result-container {
+  display: none;
+  text-align: center;
+}
+
+/* Your existing CSS */
+
+.modal {
+  /* Your existing modal styles */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  /* Your existing modal content styles */
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative; /* Ensure close button is positioned relative to this */
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+  color: #888; /* Default color */
+  font-size: 24px; /* Adjust the font size as needed */
+}
+.close-btn:hover {
+  color: red; /* Color when hovered */
+}
+.hidden {
+  display: none;
+}
